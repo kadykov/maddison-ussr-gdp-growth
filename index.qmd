@@ -2,7 +2,21 @@
 title: "USSR GDP Growth Analysis"
 ---
 
-This website presents an analysis of the USSR's GDP growth using data from the Maddison Project Database 2018. The analysis covers various periods in Soviet history, from pre-revolutionary times to the post-Soviet era.
+This website presents an analysis of the USSR's GDP growth using data from the Maddison Project Database 2018. The analysis covers various periods in Soviet history, from pre-revolutionary times to the post-Soviet era, with a particular focus on verifying claims about extraordinary growth rates during the Soviet period.
+
+## Motivation
+
+This analysis was motivated by claims made in the book "GROWTH CRYSTAL. FOR THE RUSSIAN ECONOMIC MIRACLE" ([website](https://crystalbook.ru/)), which asserted that the USSR achieved an extraordinary GDP growth rate of 13.8% per year during the period 1929-1955 (excluding the World War II years of 1941-1945). The authors claimed to base their calculations on the Maddison Project Database.
+
+Our careful analysis of the same database reveals a significantly different picture. The actual growth rate for this period was approximately 4.3% per year - still substantial, but far from the claimed 13.8%. This discrepancy prompted a thorough investigation of Soviet economic growth across various historical periods.
+
+## Key Findings
+
+1. **Growth Rate Verification**: The actual GDP growth rate during 1929-1955 (excluding 1941-1945) was approximately 4.3% per year, not 13.8% as claimed in some sources.
+
+2. **Historical Context**: While the Soviet Union did achieve significant economic growth during various periods, the rates were more modest than sometimes portrayed in certain publications.
+
+3. **Period Analysis**: Different periods of Soviet history showed varying growth patterns, influenced by factors such as industrialization policies, war recovery, and economic reforms.
 
 ## Data Source
 
