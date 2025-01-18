@@ -57,7 +57,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -100,9 +100,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
-
-<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -177,7 +174,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<div id="5842c671" class="cell" data-execution_count="1">
+<div id="066be19b" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -264,7 +261,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>df_plot <span class="op">=</span> pd.DataFrame(period_averages)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="73944bc9" class="cell" data-execution_count="2">
+<div id="13d660db" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the bar plot with error bars</span></span>
@@ -287,16 +284,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>             ha<span class="op">=</span><span class="st">'center'</span>, va<span class="op">=</span><span class="st">'bottom'</span>)</span>
 <span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Display the detailed statistics</span></span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">Detailed Statistics by Period"</span>)</span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"-"</span> <span class="op">*</span> <span class="dv">40</span>)</span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> row <span class="kw">in</span> period_averages:</span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="sc">{</span>row[<span class="st">'period'</span>]<span class="sc">}</span><span class="ss">:"</span>)</span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"  Average Growth: </span><span class="sc">{</span>row[<span class="st">'avg_growth'</span>]<span class="sc">:.2f}</span><span class="ss">%"</span>)</span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"  Standard Deviation: </span><span class="sc">{</span>row[<span class="st">'std_growth'</span>]<span class="sc">:.2f}</span><span class="ss">%"</span>)</span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"  Number of Years: </span><span class="sc">{</span>row[<span class="st">'n_years'</span>]<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -306,159 +294,140 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </figure>
 </div>
 </div>
-<div class="cell-output cell-output-stdout">
-<pre><code>
-Detailed Statistics by Period
-----------------------------------------
-
-Pre-Revolutionary
-(1885-1913):
-  Average Growth: nan%
-  Standard Deviation: nan%
-  Number of Years: 29
-
-WWI &amp; Civil War
-(1914-1920):
-  Average Growth: nan%
-  Standard Deviation: nan%
-  Number of Years: 7
-
-NEP Period
-(1921-1928):
-  Average Growth: 13.35%
-  Standard Deviation: 12.35%
-  Number of Years: 8
-
-Early Soviet
-(1929-1941):
-  Average Growth: 5.19%
-  Standard Deviation: 5.04%
-  Number of Years: 12
-
-Post-War Recovery
-(1945-1955):
-  Average Growth: 4.90%
-  Standard Deviation: 9.82%
-  Number of Years: 10
-
-Late Soviet
-(1956-1991):
-  Average Growth: 3.04%
-  Standard Deviation: 3.79%
-  Number of Years: 36
-
-Post-Soviet Crisis
-(1992-1998):
-  Average Growth: -6.69%
-  Standard Deviation: 6.24%
-  Number of Years: 7
-
-Recovery &amp; Growth
-(1999-2019):
-  Average Growth: 4.62%
-  Standard Deviation: 3.73%
-  Number of Years: 18
-
-1929-1955
-(excluding WWII):
-  Average Growth: 5.06%
-  Standard Deviation: 7.39%
-  Number of Years: 22</code></pre>
 </div>
-</div>
-<div id="482c56c9" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a table with the statistics</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>stats_df <span class="op">=</span> pd.DataFrame(period_averages)</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>stats_df <span class="op">=</span> stats_df[[<span class="st">'period'</span>, <span class="st">'avg_growth'</span>, <span class="st">'std_growth'</span>, <span class="st">'n_years'</span>]]</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>stats_df.columns <span class="op">=</span> [<span class="st">'Period'</span>, <span class="st">'Average Growth (%)'</span>, <span class="st">'Std Dev (%)'</span>, <span class="st">'Years'</span>]</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>display(stats_df.<span class="bu">round</span>(<span class="dv">2</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tabulate <span class="im">import</span> tabulate</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a table with the statistics</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>stats_df <span class="op">=</span> pd.DataFrame(period_averages)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>stats_df <span class="op">=</span> stats_df[[<span class="st">'period'</span>, <span class="st">'avg_growth'</span>, <span class="st">'std_growth'</span>, <span class="st">'n_years'</span>]]</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>stats_df.columns <span class="op">=</span> [<span class="st">'Period'</span>, <span class="st">'Average Growth (%)'</span>, <span class="st">'Std Dev (%)'</span>, <span class="st">'Years'</span>]</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert the DataFrame to a markdown table</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>markdown_table <span class="op">=</span> tabulate(stats_df.<span class="bu">round</span>(<span class="dv">2</span>), headers<span class="op">=</span><span class="st">'keys'</span>, tablefmt<span class="op">=</span><span class="st">'pipe'</span>, showindex<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(markdown_table)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display">
-<div>
-
-
-<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<table class="caption-top table">
 <thead>
 <tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">Period</th>
-<th data-quarto-table-cell-role="th">Average Growth (%)</th>
-<th data-quarto-table-cell-role="th">Std Dev (%)</th>
-<th data-quarto-table-cell-role="th">Years</th>
+<th style="text-align: left;">Period</th>
+<th style="text-align: right;">Average Growth (%)</th>
+<th style="text-align: right;">Std Dev (%)</th>
+<th style="text-align: right;">Years</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
-<td>Pre-Revolutionary\n(1885-1913)</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>29</td>
+<td style="text-align: left;">Pre-Revolutionary</td>
+<td style="text-align: right;">nan</td>
+<td style="text-align: right;">nan</td>
+<td style="text-align: right;">29</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
-<td>WWI &amp; Civil War\n(1914-1920)</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>7</td>
+<td style="text-align: left;">(1885-1913)</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>NEP Period\n(1921-1928)</td>
-<td>13.35</td>
-<td>12.35</td>
-<td>8</td>
+<td style="text-align: left;">WWI &amp; Civil War</td>
+<td style="text-align: right;">nan</td>
+<td style="text-align: right;">nan</td>
+<td style="text-align: right;">7</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">3</td>
-<td>Early Soviet\n(1929-1941)</td>
-<td>5.19</td>
-<td>5.04</td>
-<td>12</td>
+<td style="text-align: left;">(1914-1920)</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">4</td>
-<td>Post-War Recovery\n(1945-1955)</td>
-<td>4.90</td>
-<td>9.82</td>
-<td>10</td>
+<td style="text-align: left;">NEP Period</td>
+<td style="text-align: right;">13.35</td>
+<td style="text-align: right;">12.35</td>
+<td style="text-align: right;">8</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">5</td>
-<td>Late Soviet\n(1956-1991)</td>
-<td>3.04</td>
-<td>3.79</td>
-<td>36</td>
+<td style="text-align: left;">(1921-1928)</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">6</td>
-<td>Post-Soviet Crisis\n(1992-1998)</td>
-<td>-6.69</td>
-<td>6.24</td>
-<td>7</td>
+<td style="text-align: left;">Early Soviet</td>
+<td style="text-align: right;">5.19</td>
+<td style="text-align: right;">5.04</td>
+<td style="text-align: right;">12</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">7</td>
-<td>Recovery &amp; Growth\n(1999-2019)</td>
-<td>4.62</td>
-<td>3.73</td>
-<td>18</td>
+<td style="text-align: left;">(1929-1941)</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">8</td>
-<td>1929-1955\n(excluding WWII)</td>
-<td>5.06</td>
-<td>7.39</td>
-<td>22</td>
+<td style="text-align: left;">Post-War Recovery</td>
+<td style="text-align: right;">4.9</td>
+<td style="text-align: right;">9.82</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">(1945-1955)</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Late Soviet</td>
+<td style="text-align: right;">3.04</td>
+<td style="text-align: right;">3.79</td>
+<td style="text-align: right;">36</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">(1956-1991)</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Post-Soviet Crisis</td>
+<td style="text-align: right;">-6.69</td>
+<td style="text-align: right;">6.24</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">(1992-1998)</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Recovery &amp; Growth</td>
+<td style="text-align: right;">4.62</td>
+<td style="text-align: right;">3.73</td>
+<td style="text-align: right;">18</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">(1999-2019)</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">1929-1955</td>
+<td style="text-align: right;">5.06</td>
+<td style="text-align: right;">7.39</td>
+<td style="text-align: right;">22</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">(excluding WWII)</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
 </tr>
 </tbody>
 </table>
-
-</div>
-</div>
-</div>
 
 
 <!-- -->
@@ -933,140 +902,137 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb5" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Period Analysis"</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true</span></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Read the Excel file</span></span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_excel(<span class="st">"mpd2018.xlsx"</span>, sheet_name<span class="op">=</span><span class="st">"Full data"</span>)</span>
-<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter for Former USSR</span></span>
-<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>ussr_data <span class="op">=</span> df[df[<span class="st">'country'</span>] <span class="op">==</span> <span class="st">'Former USSR'</span>].copy()</span>
-<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Sort by year</span></span>
-<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>ussr_data <span class="op">=</span> ussr_data.sort_values(<span class="st">'year'</span>)</span>
-<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove data before 1884</span></span>
-<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>ussr_data <span class="op">=</span> ussr_data[ussr_data[<span class="st">'year'</span>] <span class="op">&gt;=</span> <span class="dv">1884</span>]</span>
-<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate GDP (using population and GDP per capita)</span></span>
-<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>ussr_data[<span class="st">'total_gdp'</span>] <span class="op">=</span> ussr_data[<span class="st">'rgdpnapc'</span>] <span class="op">*</span> ussr_data[<span class="st">'pop'</span>] <span class="op">*</span> <span class="dv">1000</span>  <span class="co"># pop is in thousands</span></span>
-<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>ussr_data[<span class="st">'gdp_growth'</span>] <span class="op">=</span> ussr_data[<span class="st">'total_gdp'</span>].pct_change(fill_method<span class="op">=</span><span class="va">None</span>) <span class="op">*</span> <span class="dv">100</span></span>
-<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a><span class="co"># Define periods</span></span>
-<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a>periods <span class="op">=</span> [</span>
-<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a>    (<span class="dv">1885</span>, <span class="dv">1913</span>, <span class="st">"Pre-Revolutionary</span><span class="ch">\n</span><span class="st">(1885-1913)"</span>),</span>
-<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a>    (<span class="dv">1914</span>, <span class="dv">1920</span>, <span class="st">"WWI &amp; Civil War</span><span class="ch">\n</span><span class="st">(1914-1920)"</span>),</span>
-<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a>    (<span class="dv">1921</span>, <span class="dv">1928</span>, <span class="st">"NEP Period</span><span class="ch">\n</span><span class="st">(1921-1928)"</span>),</span>
-<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a>    (<span class="dv">1929</span>, <span class="dv">1941</span>, <span class="st">"Early Soviet</span><span class="ch">\n</span><span class="st">(1929-1941)"</span>),</span>
-<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a>    <span class="co"># (1941, 1945, "WWII\n(1941-1945)"),</span></span>
-<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a>    (<span class="dv">1945</span>, <span class="dv">1955</span>, <span class="st">"Post-War Recovery</span><span class="ch">\n</span><span class="st">(1945-1955)"</span>),</span>
-<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a>    (<span class="dv">1956</span>, <span class="dv">1991</span>, <span class="st">"Late Soviet</span><span class="ch">\n</span><span class="st">(1956-1991)"</span>),</span>
-<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a>    (<span class="dv">1992</span>, <span class="dv">1998</span>, <span class="st">"Post-Soviet Crisis</span><span class="ch">\n</span><span class="st">(1992-1998)"</span>),</span>
-<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a>    (<span class="dv">1999</span>, <span class="dv">2019</span>, <span class="st">"Recovery &amp; Growth</span><span class="ch">\n</span><span class="st">(1999-2019)"</span>)</span>
-<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a>]</span>
-<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate average growth for each period</span></span>
-<span id="cb5-46"><a href="#cb5-46" aria-hidden="true" tabindex="-1"></a>period_averages <span class="op">=</span> []</span>
-<span id="cb5-47"><a href="#cb5-47" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> start_year, end_year, period_name <span class="kw">in</span> periods:</span>
-<span id="cb5-48"><a href="#cb5-48" aria-hidden="true" tabindex="-1"></a>    mask <span class="op">=</span> (ussr_data[<span class="st">'year'</span>] <span class="op">&gt;=</span> start_year) <span class="op">&amp;</span> (ussr_data[<span class="st">'year'</span>] <span class="op">&lt;=</span> end_year)</span>
-<span id="cb5-49"><a href="#cb5-49" aria-hidden="true" tabindex="-1"></a>    avg_growth <span class="op">=</span> ussr_data.loc[mask, <span class="st">'gdp_growth'</span>].mean()</span>
-<span id="cb5-50"><a href="#cb5-50" aria-hidden="true" tabindex="-1"></a>    std_growth <span class="op">=</span> ussr_data.loc[mask, <span class="st">'gdp_growth'</span>].std()</span>
-<span id="cb5-51"><a href="#cb5-51" aria-hidden="true" tabindex="-1"></a>    n_years <span class="op">=</span> mask.<span class="bu">sum</span>()</span>
-<span id="cb5-52"><a href="#cb5-52" aria-hidden="true" tabindex="-1"></a>    period_averages.append({</span>
-<span id="cb5-53"><a href="#cb5-53" aria-hidden="true" tabindex="-1"></a>        <span class="st">'period'</span>: period_name,</span>
-<span id="cb5-54"><a href="#cb5-54" aria-hidden="true" tabindex="-1"></a>        <span class="st">'avg_growth'</span>: avg_growth,</span>
-<span id="cb5-55"><a href="#cb5-55" aria-hidden="true" tabindex="-1"></a>        <span class="st">'std_growth'</span>: std_growth,</span>
-<span id="cb5-56"><a href="#cb5-56" aria-hidden="true" tabindex="-1"></a>        <span class="st">'n_years'</span>: n_years,</span>
-<span id="cb5-57"><a href="#cb5-57" aria-hidden="true" tabindex="-1"></a>        <span class="st">'start_year'</span>: start_year,</span>
-<span id="cb5-58"><a href="#cb5-58" aria-hidden="true" tabindex="-1"></a>        <span class="st">'end_year'</span>: end_year</span>
-<span id="cb5-59"><a href="#cb5-59" aria-hidden="true" tabindex="-1"></a>    })</span>
-<span id="cb5-60"><a href="#cb5-60" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-61"><a href="#cb5-61" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate special periods (1929-1955)</span></span>
-<span id="cb5-62"><a href="#cb5-62" aria-hidden="true" tabindex="-1"></a>mask_1929_1955 <span class="op">=</span> (ussr_data[<span class="st">'year'</span>] <span class="op">&gt;=</span> <span class="dv">1929</span>) <span class="op">&amp;</span> (ussr_data[<span class="st">'year'</span>] <span class="op">&lt;=</span> <span class="dv">1955</span>)</span>
-<span id="cb5-63"><a href="#cb5-63" aria-hidden="true" tabindex="-1"></a>avg_1929_1955 <span class="op">=</span> ussr_data.loc[mask_1929_1955, <span class="st">'gdp_growth'</span>].mean()</span>
-<span id="cb5-64"><a href="#cb5-64" aria-hidden="true" tabindex="-1"></a>std_1929_1955 <span class="op">=</span> ussr_data.loc[mask_1929_1955, <span class="st">'gdp_growth'</span>].std()</span>
-<span id="cb5-65"><a href="#cb5-65" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-66"><a href="#cb5-66" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate 1929-1955 without 1941-1945</span></span>
-<span id="cb5-67"><a href="#cb5-67" aria-hidden="true" tabindex="-1"></a>mask_without_war <span class="op">=</span> (</span>
-<span id="cb5-68"><a href="#cb5-68" aria-hidden="true" tabindex="-1"></a>    ((ussr_data[<span class="st">'year'</span>] <span class="op">&gt;=</span> <span class="dv">1929</span>) <span class="op">&amp;</span> (ussr_data[<span class="st">'year'</span>] <span class="op">&lt;</span> <span class="dv">1941</span>)) <span class="op">|</span></span>
-<span id="cb5-69"><a href="#cb5-69" aria-hidden="true" tabindex="-1"></a>    ((ussr_data[<span class="st">'year'</span>] <span class="op">&gt;</span> <span class="dv">1945</span>) <span class="op">&amp;</span> (ussr_data[<span class="st">'year'</span>] <span class="op">&lt;=</span> <span class="dv">1955</span>))</span>
-<span id="cb5-70"><a href="#cb5-70" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb5-71"><a href="#cb5-71" aria-hidden="true" tabindex="-1"></a>avg_1929_1955_no_war <span class="op">=</span> ussr_data.loc[mask_without_war, <span class="st">'gdp_growth'</span>].mean()</span>
-<span id="cb5-72"><a href="#cb5-72" aria-hidden="true" tabindex="-1"></a>std_1929_1955_no_war <span class="op">=</span> ussr_data.loc[mask_without_war, <span class="st">'gdp_growth'</span>].std()</span>
-<span id="cb5-73"><a href="#cb5-73" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-74"><a href="#cb5-74" aria-hidden="true" tabindex="-1"></a><span class="co"># Add special periods to the list</span></span>
-<span id="cb5-75"><a href="#cb5-75" aria-hidden="true" tabindex="-1"></a><span class="co"># period_averages.append({</span></span>
-<span id="cb5-76"><a href="#cb5-76" aria-hidden="true" tabindex="-1"></a><span class="co">#     'period': '1929-1955\n(including WWII)',</span></span>
-<span id="cb5-77"><a href="#cb5-77" aria-hidden="true" tabindex="-1"></a><span class="co">#     'avg_growth': avg_1929_1955,</span></span>
-<span id="cb5-78"><a href="#cb5-78" aria-hidden="true" tabindex="-1"></a><span class="co">#     'std_growth': std_1929_1955,</span></span>
-<span id="cb5-79"><a href="#cb5-79" aria-hidden="true" tabindex="-1"></a><span class="co">#     'n_years': mask_1929_1955.sum(),</span></span>
-<span id="cb5-80"><a href="#cb5-80" aria-hidden="true" tabindex="-1"></a><span class="co">#     'start_year': 1929,</span></span>
-<span id="cb5-81"><a href="#cb5-81" aria-hidden="true" tabindex="-1"></a><span class="co">#     'end_year': 1955</span></span>
-<span id="cb5-82"><a href="#cb5-82" aria-hidden="true" tabindex="-1"></a><span class="co"># })</span></span>
-<span id="cb5-83"><a href="#cb5-83" aria-hidden="true" tabindex="-1"></a>period_averages.append({</span>
-<span id="cb5-84"><a href="#cb5-84" aria-hidden="true" tabindex="-1"></a>    <span class="st">'period'</span>: <span class="st">'1929-1955</span><span class="ch">\n</span><span class="st">(excluding WWII)'</span>,</span>
-<span id="cb5-85"><a href="#cb5-85" aria-hidden="true" tabindex="-1"></a>    <span class="st">'avg_growth'</span>: avg_1929_1955_no_war,</span>
-<span id="cb5-86"><a href="#cb5-86" aria-hidden="true" tabindex="-1"></a>    <span class="st">'std_growth'</span>: std_1929_1955_no_war,</span>
-<span id="cb5-87"><a href="#cb5-87" aria-hidden="true" tabindex="-1"></a>    <span class="st">'n_years'</span>: mask_without_war.<span class="bu">sum</span>(),</span>
-<span id="cb5-88"><a href="#cb5-88" aria-hidden="true" tabindex="-1"></a>    <span class="st">'start_year'</span>: <span class="dv">1929</span>,</span>
-<span id="cb5-89"><a href="#cb5-89" aria-hidden="true" tabindex="-1"></a>    <span class="st">'end_year'</span>: <span class="dv">1955</span></span>
-<span id="cb5-90"><a href="#cb5-90" aria-hidden="true" tabindex="-1"></a>})</span>
-<span id="cb5-91"><a href="#cb5-91" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-92"><a href="#cb5-92" aria-hidden="true" tabindex="-1"></a><span class="co"># Create DataFrame for plotting</span></span>
-<span id="cb5-93"><a href="#cb5-93" aria-hidden="true" tabindex="-1"></a>df_plot <span class="op">=</span> pd.DataFrame(period_averages)</span>
-<span id="cb5-94"><a href="#cb5-94" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb5-95"><a href="#cb5-95" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-98"><a href="#cb5-98" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb5-99"><a href="#cb5-99" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "Average GDP Growth Rate by Period"</span></span>
-<span id="cb5-100"><a href="#cb5-100" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the bar plot with error bars</span></span>
-<span id="cb5-101"><a href="#cb5-101" aria-hidden="true" tabindex="-1"></a>plt.figure()</span>
-<span id="cb5-102"><a href="#cb5-102" aria-hidden="true" tabindex="-1"></a>bars <span class="op">=</span> plt.bar(df_plot[<span class="st">'period'</span>], df_plot[<span class="st">'avg_growth'</span>],</span>
-<span id="cb5-103"><a href="#cb5-103" aria-hidden="true" tabindex="-1"></a>               yerr<span class="op">=</span>df_plot[<span class="st">'std_growth'</span>], capsize<span class="op">=</span><span class="dv">5</span>)</span>
-<span id="cb5-104"><a href="#cb5-104" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-105"><a href="#cb5-105" aria-hidden="true" tabindex="-1"></a><span class="co"># Customize the plot</span></span>
-<span id="cb5-106"><a href="#cb5-106" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Average GDP Growth Rate by Period (%)'</span>, pad<span class="op">=</span><span class="dv">20</span>)</span>
-<span id="cb5-107"><a href="#cb5-107" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Period'</span>)</span>
-<span id="cb5-108"><a href="#cb5-108" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Average Growth Rate (%)'</span>)</span>
-<span id="cb5-109"><a href="#cb5-109" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>, axis<span class="op">=</span><span class="st">'y'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, alpha<span class="op">=</span><span class="fl">0.7</span>)</span>
-<span id="cb5-110"><a href="#cb5-110" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>, ha<span class="op">=</span><span class="st">'right'</span>)</span>
-<span id="cb5-111"><a href="#cb5-111" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-112"><a href="#cb5-112" aria-hidden="true" tabindex="-1"></a><span class="co"># Add value labels on top of each bar</span></span>
-<span id="cb5-113"><a href="#cb5-113" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> bar <span class="kw">in</span> bars:</span>
-<span id="cb5-114"><a href="#cb5-114" aria-hidden="true" tabindex="-1"></a>    height <span class="op">=</span> bar.get_height()</span>
-<span id="cb5-115"><a href="#cb5-115" aria-hidden="true" tabindex="-1"></a>    plt.text(bar.get_x() <span class="op">+</span> bar.get_width()<span class="op">/</span><span class="fl">2.</span>, height,</span>
-<span id="cb5-116"><a href="#cb5-116" aria-hidden="true" tabindex="-1"></a>             <span class="ss">f'</span><span class="sc">{</span>height<span class="sc">:.1f}</span><span class="ss">%'</span>,</span>
-<span id="cb5-117"><a href="#cb5-117" aria-hidden="true" tabindex="-1"></a>             ha<span class="op">=</span><span class="st">'center'</span>, va<span class="op">=</span><span class="st">'bottom'</span>)</span>
-<span id="cb5-118"><a href="#cb5-118" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-119"><a href="#cb5-119" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
-<span id="cb5-120"><a href="#cb5-120" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
-<span id="cb5-121"><a href="#cb5-121" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-122"><a href="#cb5-122" aria-hidden="true" tabindex="-1"></a><span class="co"># Display the detailed statistics</span></span>
-<span id="cb5-123"><a href="#cb5-123" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">Detailed Statistics by Period"</span>)</span>
-<span id="cb5-124"><a href="#cb5-124" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"-"</span> <span class="op">*</span> <span class="dv">40</span>)</span>
-<span id="cb5-125"><a href="#cb5-125" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> row <span class="kw">in</span> period_averages:</span>
-<span id="cb5-126"><a href="#cb5-126" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="sc">{</span>row[<span class="st">'period'</span>]<span class="sc">}</span><span class="ss">:"</span>)</span>
-<span id="cb5-127"><a href="#cb5-127" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"  Average Growth: </span><span class="sc">{</span>row[<span class="st">'avg_growth'</span>]<span class="sc">:.2f}</span><span class="ss">%"</span>)</span>
-<span id="cb5-128"><a href="#cb5-128" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"  Standard Deviation: </span><span class="sc">{</span>row[<span class="st">'std_growth'</span>]<span class="sc">:.2f}</span><span class="ss">%"</span>)</span>
-<span id="cb5-129"><a href="#cb5-129" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"  Number of Years: </span><span class="sc">{</span>row[<span class="st">'n_years'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb5-130"><a href="#cb5-130" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb5-131"><a href="#cb5-131" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-134"><a href="#cb5-134" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb5-135"><a href="#cb5-135" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a table with the statistics</span></span>
-<span id="cb5-136"><a href="#cb5-136" aria-hidden="true" tabindex="-1"></a>stats_df <span class="op">=</span> pd.DataFrame(period_averages)</span>
-<span id="cb5-137"><a href="#cb5-137" aria-hidden="true" tabindex="-1"></a>stats_df <span class="op">=</span> stats_df[[<span class="st">'period'</span>, <span class="st">'avg_growth'</span>, <span class="st">'std_growth'</span>, <span class="st">'n_years'</span>]]</span>
-<span id="cb5-138"><a href="#cb5-138" aria-hidden="true" tabindex="-1"></a>stats_df.columns <span class="op">=</span> [<span class="st">'Period'</span>, <span class="st">'Average Growth (%)'</span>, <span class="st">'Std Dev (%)'</span>, <span class="st">'Years'</span>]</span>
-<span id="cb5-139"><a href="#cb5-139" aria-hidden="true" tabindex="-1"></a>display(stats_df.<span class="bu">round</span>(<span class="dv">2</span>))</span>
-<span id="cb5-140"><a href="#cb5-140" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<div class="sourceCode" id="cb4" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Period Analysis"</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Read the Excel file</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_excel(<span class="st">"mpd2018.xlsx"</span>, sheet_name<span class="op">=</span><span class="st">"Full data"</span>)</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter for Former USSR</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>ussr_data <span class="op">=</span> df[df[<span class="st">'country'</span>] <span class="op">==</span> <span class="st">'Former USSR'</span>].copy()</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Sort by year</span></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>ussr_data <span class="op">=</span> ussr_data.sort_values(<span class="st">'year'</span>)</span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove data before 1884</span></span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>ussr_data <span class="op">=</span> ussr_data[ussr_data[<span class="st">'year'</span>] <span class="op">&gt;=</span> <span class="dv">1884</span>]</span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate GDP (using population and GDP per capita)</span></span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>ussr_data[<span class="st">'total_gdp'</span>] <span class="op">=</span> ussr_data[<span class="st">'rgdpnapc'</span>] <span class="op">*</span> ussr_data[<span class="st">'pop'</span>] <span class="op">*</span> <span class="dv">1000</span>  <span class="co"># pop is in thousands</span></span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>ussr_data[<span class="st">'gdp_growth'</span>] <span class="op">=</span> ussr_data[<span class="st">'total_gdp'</span>].pct_change(fill_method<span class="op">=</span><span class="va">None</span>) <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a><span class="co"># Define periods</span></span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>periods <span class="op">=</span> [</span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>    (<span class="dv">1885</span>, <span class="dv">1913</span>, <span class="st">"Pre-Revolutionary</span><span class="ch">\n</span><span class="st">(1885-1913)"</span>),</span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>    (<span class="dv">1914</span>, <span class="dv">1920</span>, <span class="st">"WWI &amp; Civil War</span><span class="ch">\n</span><span class="st">(1914-1920)"</span>),</span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>    (<span class="dv">1921</span>, <span class="dv">1928</span>, <span class="st">"NEP Period</span><span class="ch">\n</span><span class="st">(1921-1928)"</span>),</span>
+<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>    (<span class="dv">1929</span>, <span class="dv">1941</span>, <span class="st">"Early Soviet</span><span class="ch">\n</span><span class="st">(1929-1941)"</span>),</span>
+<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a>    <span class="co"># (1941, 1945, "WWII\n(1941-1945)"),</span></span>
+<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>    (<span class="dv">1945</span>, <span class="dv">1955</span>, <span class="st">"Post-War Recovery</span><span class="ch">\n</span><span class="st">(1945-1955)"</span>),</span>
+<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a>    (<span class="dv">1956</span>, <span class="dv">1991</span>, <span class="st">"Late Soviet</span><span class="ch">\n</span><span class="st">(1956-1991)"</span>),</span>
+<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>    (<span class="dv">1992</span>, <span class="dv">1998</span>, <span class="st">"Post-Soviet Crisis</span><span class="ch">\n</span><span class="st">(1992-1998)"</span>),</span>
+<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a>    (<span class="dv">1999</span>, <span class="dv">2019</span>, <span class="st">"Recovery &amp; Growth</span><span class="ch">\n</span><span class="st">(1999-2019)"</span>)</span>
+<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate average growth for each period</span></span>
+<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a>period_averages <span class="op">=</span> []</span>
+<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> start_year, end_year, period_name <span class="kw">in</span> periods:</span>
+<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a>    mask <span class="op">=</span> (ussr_data[<span class="st">'year'</span>] <span class="op">&gt;=</span> start_year) <span class="op">&amp;</span> (ussr_data[<span class="st">'year'</span>] <span class="op">&lt;=</span> end_year)</span>
+<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a>    avg_growth <span class="op">=</span> ussr_data.loc[mask, <span class="st">'gdp_growth'</span>].mean()</span>
+<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a>    std_growth <span class="op">=</span> ussr_data.loc[mask, <span class="st">'gdp_growth'</span>].std()</span>
+<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a>    n_years <span class="op">=</span> mask.<span class="bu">sum</span>()</span>
+<span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a>    period_averages.append({</span>
+<span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a>        <span class="st">'period'</span>: period_name,</span>
+<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a>        <span class="st">'avg_growth'</span>: avg_growth,</span>
+<span id="cb4-55"><a href="#cb4-55" aria-hidden="true" tabindex="-1"></a>        <span class="st">'std_growth'</span>: std_growth,</span>
+<span id="cb4-56"><a href="#cb4-56" aria-hidden="true" tabindex="-1"></a>        <span class="st">'n_years'</span>: n_years,</span>
+<span id="cb4-57"><a href="#cb4-57" aria-hidden="true" tabindex="-1"></a>        <span class="st">'start_year'</span>: start_year,</span>
+<span id="cb4-58"><a href="#cb4-58" aria-hidden="true" tabindex="-1"></a>        <span class="st">'end_year'</span>: end_year</span>
+<span id="cb4-59"><a href="#cb4-59" aria-hidden="true" tabindex="-1"></a>    })</span>
+<span id="cb4-60"><a href="#cb4-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-61"><a href="#cb4-61" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate special periods (1929-1955)</span></span>
+<span id="cb4-62"><a href="#cb4-62" aria-hidden="true" tabindex="-1"></a>mask_1929_1955 <span class="op">=</span> (ussr_data[<span class="st">'year'</span>] <span class="op">&gt;=</span> <span class="dv">1929</span>) <span class="op">&amp;</span> (ussr_data[<span class="st">'year'</span>] <span class="op">&lt;=</span> <span class="dv">1955</span>)</span>
+<span id="cb4-63"><a href="#cb4-63" aria-hidden="true" tabindex="-1"></a>avg_1929_1955 <span class="op">=</span> ussr_data.loc[mask_1929_1955, <span class="st">'gdp_growth'</span>].mean()</span>
+<span id="cb4-64"><a href="#cb4-64" aria-hidden="true" tabindex="-1"></a>std_1929_1955 <span class="op">=</span> ussr_data.loc[mask_1929_1955, <span class="st">'gdp_growth'</span>].std()</span>
+<span id="cb4-65"><a href="#cb4-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-66"><a href="#cb4-66" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate 1929-1955 without 1941-1945</span></span>
+<span id="cb4-67"><a href="#cb4-67" aria-hidden="true" tabindex="-1"></a>mask_without_war <span class="op">=</span> (</span>
+<span id="cb4-68"><a href="#cb4-68" aria-hidden="true" tabindex="-1"></a>    ((ussr_data[<span class="st">'year'</span>] <span class="op">&gt;=</span> <span class="dv">1929</span>) <span class="op">&amp;</span> (ussr_data[<span class="st">'year'</span>] <span class="op">&lt;</span> <span class="dv">1941</span>)) <span class="op">|</span></span>
+<span id="cb4-69"><a href="#cb4-69" aria-hidden="true" tabindex="-1"></a>    ((ussr_data[<span class="st">'year'</span>] <span class="op">&gt;</span> <span class="dv">1945</span>) <span class="op">&amp;</span> (ussr_data[<span class="st">'year'</span>] <span class="op">&lt;=</span> <span class="dv">1955</span>))</span>
+<span id="cb4-70"><a href="#cb4-70" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb4-71"><a href="#cb4-71" aria-hidden="true" tabindex="-1"></a>avg_1929_1955_no_war <span class="op">=</span> ussr_data.loc[mask_without_war, <span class="st">'gdp_growth'</span>].mean()</span>
+<span id="cb4-72"><a href="#cb4-72" aria-hidden="true" tabindex="-1"></a>std_1929_1955_no_war <span class="op">=</span> ussr_data.loc[mask_without_war, <span class="st">'gdp_growth'</span>].std()</span>
+<span id="cb4-73"><a href="#cb4-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-74"><a href="#cb4-74" aria-hidden="true" tabindex="-1"></a><span class="co"># Add special periods to the list</span></span>
+<span id="cb4-75"><a href="#cb4-75" aria-hidden="true" tabindex="-1"></a><span class="co"># period_averages.append({</span></span>
+<span id="cb4-76"><a href="#cb4-76" aria-hidden="true" tabindex="-1"></a><span class="co">#     'period': '1929-1955\n(including WWII)',</span></span>
+<span id="cb4-77"><a href="#cb4-77" aria-hidden="true" tabindex="-1"></a><span class="co">#     'avg_growth': avg_1929_1955,</span></span>
+<span id="cb4-78"><a href="#cb4-78" aria-hidden="true" tabindex="-1"></a><span class="co">#     'std_growth': std_1929_1955,</span></span>
+<span id="cb4-79"><a href="#cb4-79" aria-hidden="true" tabindex="-1"></a><span class="co">#     'n_years': mask_1929_1955.sum(),</span></span>
+<span id="cb4-80"><a href="#cb4-80" aria-hidden="true" tabindex="-1"></a><span class="co">#     'start_year': 1929,</span></span>
+<span id="cb4-81"><a href="#cb4-81" aria-hidden="true" tabindex="-1"></a><span class="co">#     'end_year': 1955</span></span>
+<span id="cb4-82"><a href="#cb4-82" aria-hidden="true" tabindex="-1"></a><span class="co"># })</span></span>
+<span id="cb4-83"><a href="#cb4-83" aria-hidden="true" tabindex="-1"></a>period_averages.append({</span>
+<span id="cb4-84"><a href="#cb4-84" aria-hidden="true" tabindex="-1"></a>    <span class="st">'period'</span>: <span class="st">'1929-1955</span><span class="ch">\n</span><span class="st">(excluding WWII)'</span>,</span>
+<span id="cb4-85"><a href="#cb4-85" aria-hidden="true" tabindex="-1"></a>    <span class="st">'avg_growth'</span>: avg_1929_1955_no_war,</span>
+<span id="cb4-86"><a href="#cb4-86" aria-hidden="true" tabindex="-1"></a>    <span class="st">'std_growth'</span>: std_1929_1955_no_war,</span>
+<span id="cb4-87"><a href="#cb4-87" aria-hidden="true" tabindex="-1"></a>    <span class="st">'n_years'</span>: mask_without_war.<span class="bu">sum</span>(),</span>
+<span id="cb4-88"><a href="#cb4-88" aria-hidden="true" tabindex="-1"></a>    <span class="st">'start_year'</span>: <span class="dv">1929</span>,</span>
+<span id="cb4-89"><a href="#cb4-89" aria-hidden="true" tabindex="-1"></a>    <span class="st">'end_year'</span>: <span class="dv">1955</span></span>
+<span id="cb4-90"><a href="#cb4-90" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb4-91"><a href="#cb4-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-92"><a href="#cb4-92" aria-hidden="true" tabindex="-1"></a><span class="co"># Create DataFrame for plotting</span></span>
+<span id="cb4-93"><a href="#cb4-93" aria-hidden="true" tabindex="-1"></a>df_plot <span class="op">=</span> pd.DataFrame(period_averages)</span>
+<span id="cb4-94"><a href="#cb4-94" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-95"><a href="#cb4-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-98"><a href="#cb4-98" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb4-99"><a href="#cb4-99" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "Average GDP Growth Rate by Period"</span></span>
+<span id="cb4-100"><a href="#cb4-100" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the bar plot with error bars</span></span>
+<span id="cb4-101"><a href="#cb4-101" aria-hidden="true" tabindex="-1"></a>plt.figure()</span>
+<span id="cb4-102"><a href="#cb4-102" aria-hidden="true" tabindex="-1"></a>bars <span class="op">=</span> plt.bar(df_plot[<span class="st">'period'</span>], df_plot[<span class="st">'avg_growth'</span>],</span>
+<span id="cb4-103"><a href="#cb4-103" aria-hidden="true" tabindex="-1"></a>               yerr<span class="op">=</span>df_plot[<span class="st">'std_growth'</span>], capsize<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb4-104"><a href="#cb4-104" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-105"><a href="#cb4-105" aria-hidden="true" tabindex="-1"></a><span class="co"># Customize the plot</span></span>
+<span id="cb4-106"><a href="#cb4-106" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Average GDP Growth Rate by Period (%)'</span>, pad<span class="op">=</span><span class="dv">20</span>)</span>
+<span id="cb4-107"><a href="#cb4-107" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Period'</span>)</span>
+<span id="cb4-108"><a href="#cb4-108" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Average Growth Rate (%)'</span>)</span>
+<span id="cb4-109"><a href="#cb4-109" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>, axis<span class="op">=</span><span class="st">'y'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, alpha<span class="op">=</span><span class="fl">0.7</span>)</span>
+<span id="cb4-110"><a href="#cb4-110" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>, ha<span class="op">=</span><span class="st">'right'</span>)</span>
+<span id="cb4-111"><a href="#cb4-111" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-112"><a href="#cb4-112" aria-hidden="true" tabindex="-1"></a><span class="co"># Add value labels on top of each bar</span></span>
+<span id="cb4-113"><a href="#cb4-113" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> bar <span class="kw">in</span> bars:</span>
+<span id="cb4-114"><a href="#cb4-114" aria-hidden="true" tabindex="-1"></a>    height <span class="op">=</span> bar.get_height()</span>
+<span id="cb4-115"><a href="#cb4-115" aria-hidden="true" tabindex="-1"></a>    plt.text(bar.get_x() <span class="op">+</span> bar.get_width()<span class="op">/</span><span class="fl">2.</span>, height,</span>
+<span id="cb4-116"><a href="#cb4-116" aria-hidden="true" tabindex="-1"></a>             <span class="ss">f'</span><span class="sc">{</span>height<span class="sc">:.1f}</span><span class="ss">%'</span>,</span>
+<span id="cb4-117"><a href="#cb4-117" aria-hidden="true" tabindex="-1"></a>             ha<span class="op">=</span><span class="st">'center'</span>, va<span class="op">=</span><span class="st">'bottom'</span>)</span>
+<span id="cb4-118"><a href="#cb4-118" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-119"><a href="#cb4-119" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb4-120"><a href="#cb4-120" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb4-121"><a href="#cb4-121" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-122"><a href="#cb4-122" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-125"><a href="#cb4-125" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb4-126"><a href="#cb4-126" aria-hidden="true" tabindex="-1"></a><span class="co">#| output: asis</span></span>
+<span id="cb4-127"><a href="#cb4-127" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tabulate <span class="im">import</span> tabulate</span>
+<span id="cb4-128"><a href="#cb4-128" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-129"><a href="#cb4-129" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a table with the statistics</span></span>
+<span id="cb4-130"><a href="#cb4-130" aria-hidden="true" tabindex="-1"></a>stats_df <span class="op">=</span> pd.DataFrame(period_averages)</span>
+<span id="cb4-131"><a href="#cb4-131" aria-hidden="true" tabindex="-1"></a>stats_df <span class="op">=</span> stats_df[[<span class="st">'period'</span>, <span class="st">'avg_growth'</span>, <span class="st">'std_growth'</span>, <span class="st">'n_years'</span>]]</span>
+<span id="cb4-132"><a href="#cb4-132" aria-hidden="true" tabindex="-1"></a>stats_df.columns <span class="op">=</span> [<span class="st">'Period'</span>, <span class="st">'Average Growth (%)'</span>, <span class="st">'Std Dev (%)'</span>, <span class="st">'Years'</span>]</span>
+<span id="cb4-133"><a href="#cb4-133" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-134"><a href="#cb4-134" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert the DataFrame to a markdown table</span></span>
+<span id="cb4-135"><a href="#cb4-135" aria-hidden="true" tabindex="-1"></a>markdown_table <span class="op">=</span> tabulate(stats_df.<span class="bu">round</span>(<span class="dv">2</span>), headers<span class="op">=</span><span class="st">'keys'</span>, tablefmt<span class="op">=</span><span class="st">'pipe'</span>, showindex<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb4-136"><a href="#cb4-136" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(markdown_table)</span>
+<span id="cb4-137"><a href="#cb4-137" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 </code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
