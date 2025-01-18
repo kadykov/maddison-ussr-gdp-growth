@@ -16,6 +16,11 @@ website:
         text: Period Analysis
       - href: about.qmd
         text: About
+  repo-url: https://github.com/kadykov/maddison-ussr-gdp-growth
+  repo-actions:
+    - source
+    - edit
+    - issue
 
 format:
   html:
