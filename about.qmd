@@ -1,0 +1,43 @@
+---
+title: "About"
+---
+
+This analysis uses data from the Maddison Project Database 2018, which provides historical GDP estimates for countries worldwide. The database is particularly valuable for long-term economic analysis as it attempts to create consistent and comparable GDP estimates across time and space.
+
+## Data Description
+
+The following variables are used in our analysis:
+
+- **countrycode**: 3-letter ISO country code
+- **country**: Country name
+- **year**: Year
+- **cgdppc**: Real GDP per capita in 2011US$, multiple benchmarks (suitable for cross-country income comparisons)
+- **rgdpnapc**: Real GDP per capita in 2011US$, 2011 benchmark (suitable for cross-country growth comparisons)
+- **pop**: Population, mid-year (thousands)
+
+## Methodology
+
+The analysis focuses on the growth rates of both total GDP and GDP per capita. The total GDP is calculated by multiplying the GDP per capita by the population. Growth rates are calculated as year-over-year percentage changes.
+
+## Period Selection
+
+The periods chosen for analysis correspond to significant historical events and phases in Soviet/Russian history:
+
+1. **Pre-Revolutionary Period (1885-1913)**: Late Imperial Russia
+2. **World War I and Civil War (1914-1920)**: Period of major upheaval
+3. **NEP Period (1921-1928)**: New Economic Policy under Lenin and early Stalin
+4. **Early Soviet Industrialization (1929-1941)**: First Five-Year Plans
+5. **World War II (1941-1945)**: Great Patriotic War
+6. **Post-War Recovery (1945-1955)**: Reconstruction period
+7. **Late Soviet Period (1956-1991)**: From Khrushchev to Gorbachev
+8. **Post-Soviet Crisis (1992-1998)**: Transition period
+9. **Recovery and Growth (1999-2019)**: Modern Russia
+
+## Data Source
+
+The data comes from:
+[Maddison Project Database 2018](https://www.rug.nl/ggdc/historicaldevelopment/maddison/)
+
+## Code
+
+The analysis code is available on GitHub at: [maddison-ussr-gdp-growth](https://github.com/openhands/maddison-ussr-gdp-growth)
