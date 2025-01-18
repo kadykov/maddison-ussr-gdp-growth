@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>GDP Growth Analysis – USSR GDP Growth Analysis</title>
+<title>Year-by-Year GDP Growth Analysis – USSR GDP Growth Analysis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -152,15 +152,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#year-by-year-analysis-of-ussrs-economic-growth" id="toc-year-by-year-analysis-of-ussrs-economic-growth" class="nav-link active" data-scroll-target="#year-by-year-analysis-of-ussrs-economic-growth">Year-by-Year Analysis of USSR’s Economic Growth</a>
+  <ul class="collapse">
+  <li><a href="#purpose-of-this-analysis" id="toc-purpose-of-this-analysis" class="nav-link" data-scroll-target="#purpose-of-this-analysis">Purpose of This Analysis</a></li>
+  <li><a href="#key-observations-from-year-by-year-analysis" id="toc-key-observations-from-year-by-year-analysis" class="nav-link" data-scroll-target="#key-observations-from-year-by-year-analysis">Key Observations from Year-by-Year Analysis</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/kadykov/maddison-ussr-gdp-growth/blob/main/analysis.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/kadykov/maddison-ussr-gdp-growth/edit/main/analysis.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li><li><a href="https://github.com/kadykov/maddison-ussr-gdp-growth/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">GDP Growth Analysis</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+<div class="quarto-title-block"><div><h1 class="title">Year-by-Year GDP Growth Analysis</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
 </div>
 
 
@@ -177,7 +187,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<div id="e918f9ee" class="cell" data-execution_count="1">
+<section id="year-by-year-analysis-of-ussrs-economic-growth" class="level1">
+<h1>Year-by-Year Analysis of USSR’s Economic Growth</h1>
+<p>While our <a href="./periods.html">Period Analysis</a> focuses on average growth rates during specific historical periods, particularly addressing the claim of 13.8% growth during 1929-1955, this page provides a more detailed, year-by-year view of the USSR’s economic performance.</p>
+<section id="purpose-of-this-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="purpose-of-this-analysis">Purpose of This Analysis</h2>
+<ol type="1">
+<li><strong>Detailed Growth Patterns</strong>: By examining annual data points rather than period averages, we can:
+<ul>
+<li>Identify specific years of exceptional growth or decline</li>
+<li>Observe the volatility of growth rates</li>
+<li>See the immediate impact of major historical events</li>
+</ul></li>
+<li><strong>Data Transparency</strong>: The year-by-year presentation allows readers to:
+<ul>
+<li>Verify our calculations</li>
+<li>Conduct their own analysis of specific time periods</li>
+<li>Better understand the underlying data used in our period averages</li>
+</ul></li>
+<li><strong>Growth Rate Variations</strong>: The analysis shows both total GDP and GDP per capita growth rates, helping to:
+<ul>
+<li>Distinguish between total economic growth and individual prosperity</li>
+<li>Account for population changes in economic performance</li>
+<li>Provide a more complete picture of economic development</li>
+</ul></li>
+</ol>
+<p>Below are the visualizations and data showing the annual growth rates throughout the entire period covered by the Maddison Project Database.</p>
+<div id="0b154a2a" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -205,7 +241,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>ussr_data[<span class="st">'gdp_per_capita_growth'</span>] <span class="op">=</span> ussr_data[<span class="st">'rgdpnapc'</span>].pct_change(fill_method<span class="op">=</span><span class="va">None</span>) <span class="op">*</span> <span class="dv">100</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="7403ecfa" class="cell" data-execution_count="2">
+<div id="e7acabba" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot 1: GDP Growth Rate</span></span>
@@ -225,7 +261,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<div id="536e7497" class="cell" data-execution_count="3">
+<div id="97ae5987" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot 2: GDP per Capita Growth Rate</span></span>
@@ -247,7 +283,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<div id="d18f980c" class="cell" data-execution_count="4">
+<div id="85cc5227" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Display summary statistics</span></span>
@@ -361,10 +397,43 @@ Lowest GDP growth: -20.79% (Year: 1946)</code></pre>
 </div>
 </div>
 </div>
+</section>
+<section id="key-observations-from-year-by-year-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="key-observations-from-year-by-year-analysis">Key Observations from Year-by-Year Analysis</h2>
+<p>The annual data reveals several important patterns that complement our period analysis:</p>
+<ol type="1">
+<li><strong>Growth Volatility</strong>
+<ul>
+<li>Economic growth was highly volatile throughout the Soviet period</li>
+<li>The most extreme fluctuations occurred during periods of major historical events (wars, revolutions, reforms)</li>
+<li>This volatility is somewhat masked when looking at period averages</li>
+</ul></li>
+<li><strong>Growth Peaks and Troughs</strong>
+<ul>
+<li>The highest growth rates were typically observed during recovery periods (post-Civil War, post-WWII)</li>
+<li>The deepest declines coincided with major conflicts and political transitions</li>
+<li>The claimed 13.8% sustained growth rate would have been exceptional even compared to the best individual years</li>
+</ul></li>
+<li><strong>GDP vs GDP per Capita</strong>
+<ul>
+<li>Total GDP growth often exceeded per capita growth, reflecting population growth</li>
+<li>The gap between total and per capita growth varied significantly across different periods</li>
+<li>This difference is crucial for understanding actual improvements in living standards</li>
+</ul></li>
+<li><strong>Data Patterns</strong>
+<ul>
+<li>The year-by-year data shows no sustained period of double-digit growth that would support the 13.8% claim</li>
+<li>Growth rates were generally more modest and variable than suggested by period averages alone</li>
+<li>The data exhibits clear patterns corresponding to known historical events and policy changes</li>
+</ul></li>
+</ol>
+<p>This detailed view reinforces our findings from the period analysis while providing additional context about the variability and patterns of Soviet economic growth.</p>
 
 
 <!-- -->
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -836,77 +905,126 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="sourceCode" id="cb6" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "GDP Growth Analysis"</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Year-by-Year GDP Growth Analysis"</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
 <span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true</span></span>
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
 <span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
-<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Read the Excel file</span></span>
-<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_excel(<span class="st">"mpd2018.xlsx"</span>, sheet_name<span class="op">=</span><span class="st">"Full data"</span>)</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="fu"># Year-by-Year Analysis of USSR's Economic Growth</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>While our <span class="co">[</span><span class="ot">Period Analysis</span><span class="co">](periods.qmd)</span> focuses on average growth rates during specific historical periods, particularly addressing the claim of 13.8% growth during 1929-1955, this page provides a more detailed, year-by-year view of the USSR's economic performance.</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="fu">## Purpose of This Analysis</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Detailed Growth Patterns**: By examining annual data points rather than period averages, we can:</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Identify specific years of exceptional growth or decline</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Observe the volatility of growth rates</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>See the immediate impact of major historical events</span>
 <span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter for Former USSR</span></span>
-<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>ussr_data <span class="op">=</span> df[df[<span class="st">'country'</span>] <span class="op">==</span> <span class="st">'Former USSR'</span>].copy()</span>
-<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Sort by year</span></span>
-<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>ussr_data <span class="op">=</span> ussr_data.sort_values(<span class="st">'year'</span>)</span>
-<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove data before 1884</span></span>
-<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>ussr_data <span class="op">=</span> ussr_data[ussr_data[<span class="st">'year'</span>] <span class="op">&gt;=</span> <span class="dv">1884</span>]</span>
-<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate GDP (using population and GDP per capita)</span></span>
-<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a>ussr_data[<span class="st">'total_gdp'</span>] <span class="op">=</span> ussr_data[<span class="st">'rgdpnapc'</span>] <span class="op">*</span> ussr_data[<span class="st">'pop'</span>] <span class="op">*</span> <span class="dv">1000</span>  <span class="co"># pop is in thousands</span></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Data Transparency**: The year-by-year presentation allows readers to:</span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Verify our calculations</span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Conduct their own analysis of specific time periods</span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Better understand the underlying data used in our period averages</span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Growth Rate Variations**: The analysis shows both total GDP and GDP per capita growth rates, helping to:</span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Distinguish between total economic growth and individual prosperity</span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Account for population changes in economic performance</span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Provide a more complete picture of economic development</span>
+<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a>Below are the visualizations and data showing the annual growth rates throughout the entire period covered by the Maddison Project Database.</span>
 <span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate year-over-year growth rates</span></span>
-<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a>ussr_data[<span class="st">'gdp_growth'</span>] <span class="op">=</span> ussr_data[<span class="st">'total_gdp'</span>].pct_change(fill_method<span class="op">=</span><span class="va">None</span>) <span class="op">*</span> <span class="dv">100</span></span>
-<span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a>ussr_data[<span class="st">'gdp_per_capita_growth'</span>] <span class="op">=</span> ussr_data[<span class="st">'rgdpnapc'</span>].pct_change(fill_method<span class="op">=</span><span class="va">None</span>) <span class="op">*</span> <span class="dv">100</span></span>
-<span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb6-36"><a href="#cb6-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-39"><a href="#cb6-39" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb6-40"><a href="#cb6-40" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "GDP Growth Rate"</span></span>
-<span id="cb6-41"><a href="#cb6-41" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot 1: GDP Growth Rate</span></span>
-<span id="cb6-42"><a href="#cb6-42" aria-hidden="true" tabindex="-1"></a>plt.plot(ussr_data[<span class="st">'year'</span>], ussr_data[<span class="st">'gdp_growth'</span>], marker<span class="op">=</span><span class="st">'o'</span>)</span>
-<span id="cb6-43"><a href="#cb6-43" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'USSR GDP Growth Rate (%)'</span>)</span>
-<span id="cb6-44"><a href="#cb6-44" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Year'</span>)</span>
-<span id="cb6-45"><a href="#cb6-45" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Growth Rate (%)'</span>)</span>
-<span id="cb6-46"><a href="#cb6-46" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
-<span id="cb6-47"><a href="#cb6-47" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb6-36"><a href="#cb6-36" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb6-37"><a href="#cb6-37" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
+<span id="cb6-38"><a href="#cb6-38" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
+<span id="cb6-39"><a href="#cb6-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-40"><a href="#cb6-40" aria-hidden="true" tabindex="-1"></a><span class="co"># Read the Excel file</span></span>
+<span id="cb6-41"><a href="#cb6-41" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_excel(<span class="st">"mpd2018.xlsx"</span>, sheet_name<span class="op">=</span><span class="st">"Full data"</span>)</span>
+<span id="cb6-42"><a href="#cb6-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-43"><a href="#cb6-43" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter for Former USSR</span></span>
+<span id="cb6-44"><a href="#cb6-44" aria-hidden="true" tabindex="-1"></a>ussr_data <span class="op">=</span> df[df[<span class="st">'country'</span>] <span class="op">==</span> <span class="st">'Former USSR'</span>].copy()</span>
+<span id="cb6-45"><a href="#cb6-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-46"><a href="#cb6-46" aria-hidden="true" tabindex="-1"></a><span class="co"># Sort by year</span></span>
+<span id="cb6-47"><a href="#cb6-47" aria-hidden="true" tabindex="-1"></a>ussr_data <span class="op">=</span> ussr_data.sort_values(<span class="st">'year'</span>)</span>
 <span id="cb6-48"><a href="#cb6-48" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-49"><a href="#cb6-49" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb6-50"><a href="#cb6-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-53"><a href="#cb6-53" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb6-54"><a href="#cb6-54" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "GDP per Capita Growth Rate"</span></span>
-<span id="cb6-55"><a href="#cb6-55" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot 2: GDP per Capita Growth Rate</span></span>
-<span id="cb6-56"><a href="#cb6-56" aria-hidden="true" tabindex="-1"></a>plt.plot(ussr_data[<span class="st">'year'</span>], ussr_data[<span class="st">'gdp_per_capita_growth'</span>], marker<span class="op">=</span><span class="st">'o'</span>, color<span class="op">=</span><span class="st">'orange'</span>)</span>
-<span id="cb6-57"><a href="#cb6-57" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'USSR GDP per Capita Growth Rate (%)'</span>)</span>
-<span id="cb6-58"><a href="#cb6-58" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Year'</span>)</span>
-<span id="cb6-59"><a href="#cb6-59" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Growth Rate (%)'</span>)</span>
-<span id="cb6-60"><a href="#cb6-60" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
-<span id="cb6-61"><a href="#cb6-61" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-62"><a href="#cb6-62" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
-<span id="cb6-63"><a href="#cb6-63" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
-<span id="cb6-64"><a href="#cb6-64" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb6-65"><a href="#cb6-65" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-68"><a href="#cb6-68" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb6-69"><a href="#cb6-69" aria-hidden="true" tabindex="-1"></a><span class="co"># Display summary statistics</span></span>
-<span id="cb6-70"><a href="#cb6-70" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">USSR GDP Growth Analysis"</span>)</span>
-<span id="cb6-71"><a href="#cb6-71" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"-"</span> <span class="op">*</span> <span class="dv">30</span>)</span>
-<span id="cb6-72"><a href="#cb6-72" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Data period: </span><span class="sc">{</span>ussr_data[<span class="st">'year'</span>]<span class="sc">.</span><span class="bu">min</span>()<span class="sc">}</span><span class="ss"> - </span><span class="sc">{</span>ussr_data[<span class="st">'year'</span>]<span class="sc">.</span><span class="bu">max</span>()<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb6-73"><a href="#cb6-73" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">Average GDP growth rate: </span><span class="sc">{</span>ussr_data[<span class="st">'gdp_growth'</span>]<span class="sc">.</span>mean()<span class="sc">:.2f}</span><span class="ss">%"</span>)</span>
-<span id="cb6-74"><a href="#cb6-74" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Average GDP per capita growth rate: </span><span class="sc">{</span>ussr_data[<span class="st">'gdp_per_capita_growth'</span>]<span class="sc">.</span>mean()<span class="sc">:.2f}</span><span class="ss">%"</span>)</span>
-<span id="cb6-75"><a href="#cb6-75" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">Highest GDP growth: </span><span class="sc">{</span>ussr_data[<span class="st">'gdp_growth'</span>]<span class="sc">.</span><span class="bu">max</span>()<span class="sc">:.2f}</span><span class="ss">% (Year: </span><span class="sc">{</span>ussr_data<span class="sc">.</span>loc[ussr_data[<span class="st">'gdp_growth'</span>].idxmax(), <span class="st">'year'</span>]<span class="sc">}</span><span class="ss">)"</span>)</span>
-<span id="cb6-76"><a href="#cb6-76" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Lowest GDP growth: </span><span class="sc">{</span>ussr_data[<span class="st">'gdp_growth'</span>]<span class="sc">.</span><span class="bu">min</span>()<span class="sc">:.2f}</span><span class="ss">% (Year: </span><span class="sc">{</span>ussr_data<span class="sc">.</span>loc[ussr_data[<span class="st">'gdp_growth'</span>].idxmin(), <span class="st">'year'</span>]<span class="sc">}</span><span class="ss">)"</span>)</span>
-<span id="cb6-77"><a href="#cb6-77" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-78"><a href="#cb6-78" aria-hidden="true" tabindex="-1"></a><span class="co"># Display the data table</span></span>
-<span id="cb6-79"><a href="#cb6-79" aria-hidden="true" tabindex="-1"></a>display(ussr_data[[<span class="st">'year'</span>, <span class="st">'gdp_growth'</span>, <span class="st">'gdp_per_capita_growth'</span>]].<span class="bu">round</span>(<span class="dv">2</span>))</span>
-<span id="cb6-80"><a href="#cb6-80" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb6-49"><a href="#cb6-49" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove data before 1884</span></span>
+<span id="cb6-50"><a href="#cb6-50" aria-hidden="true" tabindex="-1"></a>ussr_data <span class="op">=</span> ussr_data[ussr_data[<span class="st">'year'</span>] <span class="op">&gt;=</span> <span class="dv">1884</span>]</span>
+<span id="cb6-51"><a href="#cb6-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-52"><a href="#cb6-52" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate GDP (using population and GDP per capita)</span></span>
+<span id="cb6-53"><a href="#cb6-53" aria-hidden="true" tabindex="-1"></a>ussr_data[<span class="st">'total_gdp'</span>] <span class="op">=</span> ussr_data[<span class="st">'rgdpnapc'</span>] <span class="op">*</span> ussr_data[<span class="st">'pop'</span>] <span class="op">*</span> <span class="dv">1000</span>  <span class="co"># pop is in thousands</span></span>
+<span id="cb6-54"><a href="#cb6-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-55"><a href="#cb6-55" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate year-over-year growth rates</span></span>
+<span id="cb6-56"><a href="#cb6-56" aria-hidden="true" tabindex="-1"></a>ussr_data[<span class="st">'gdp_growth'</span>] <span class="op">=</span> ussr_data[<span class="st">'total_gdp'</span>].pct_change(fill_method<span class="op">=</span><span class="va">None</span>) <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb6-57"><a href="#cb6-57" aria-hidden="true" tabindex="-1"></a>ussr_data[<span class="st">'gdp_per_capita_growth'</span>] <span class="op">=</span> ussr_data[<span class="st">'rgdpnapc'</span>].pct_change(fill_method<span class="op">=</span><span class="va">None</span>) <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb6-58"><a href="#cb6-58" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb6-59"><a href="#cb6-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-62"><a href="#cb6-62" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb6-63"><a href="#cb6-63" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "GDP Growth Rate"</span></span>
+<span id="cb6-64"><a href="#cb6-64" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot 1: GDP Growth Rate</span></span>
+<span id="cb6-65"><a href="#cb6-65" aria-hidden="true" tabindex="-1"></a>plt.plot(ussr_data[<span class="st">'year'</span>], ussr_data[<span class="st">'gdp_growth'</span>], marker<span class="op">=</span><span class="st">'o'</span>)</span>
+<span id="cb6-66"><a href="#cb6-66" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'USSR GDP Growth Rate (%)'</span>)</span>
+<span id="cb6-67"><a href="#cb6-67" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Year'</span>)</span>
+<span id="cb6-68"><a href="#cb6-68" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Growth Rate (%)'</span>)</span>
+<span id="cb6-69"><a href="#cb6-69" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb6-70"><a href="#cb6-70" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb6-71"><a href="#cb6-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-72"><a href="#cb6-72" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb6-73"><a href="#cb6-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-76"><a href="#cb6-76" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb6-77"><a href="#cb6-77" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "GDP per Capita Growth Rate"</span></span>
+<span id="cb6-78"><a href="#cb6-78" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot 2: GDP per Capita Growth Rate</span></span>
+<span id="cb6-79"><a href="#cb6-79" aria-hidden="true" tabindex="-1"></a>plt.plot(ussr_data[<span class="st">'year'</span>], ussr_data[<span class="st">'gdp_per_capita_growth'</span>], marker<span class="op">=</span><span class="st">'o'</span>, color<span class="op">=</span><span class="st">'orange'</span>)</span>
+<span id="cb6-80"><a href="#cb6-80" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'USSR GDP per Capita Growth Rate (%)'</span>)</span>
+<span id="cb6-81"><a href="#cb6-81" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Year'</span>)</span>
+<span id="cb6-82"><a href="#cb6-82" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Growth Rate (%)'</span>)</span>
+<span id="cb6-83"><a href="#cb6-83" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb6-84"><a href="#cb6-84" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-85"><a href="#cb6-85" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb6-86"><a href="#cb6-86" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb6-87"><a href="#cb6-87" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb6-88"><a href="#cb6-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-91"><a href="#cb6-91" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb6-92"><a href="#cb6-92" aria-hidden="true" tabindex="-1"></a><span class="co"># Display summary statistics</span></span>
+<span id="cb6-93"><a href="#cb6-93" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">USSR GDP Growth Analysis"</span>)</span>
+<span id="cb6-94"><a href="#cb6-94" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"-"</span> <span class="op">*</span> <span class="dv">30</span>)</span>
+<span id="cb6-95"><a href="#cb6-95" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Data period: </span><span class="sc">{</span>ussr_data[<span class="st">'year'</span>]<span class="sc">.</span><span class="bu">min</span>()<span class="sc">}</span><span class="ss"> - </span><span class="sc">{</span>ussr_data[<span class="st">'year'</span>]<span class="sc">.</span><span class="bu">max</span>()<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb6-96"><a href="#cb6-96" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">Average GDP growth rate: </span><span class="sc">{</span>ussr_data[<span class="st">'gdp_growth'</span>]<span class="sc">.</span>mean()<span class="sc">:.2f}</span><span class="ss">%"</span>)</span>
+<span id="cb6-97"><a href="#cb6-97" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Average GDP per capita growth rate: </span><span class="sc">{</span>ussr_data[<span class="st">'gdp_per_capita_growth'</span>]<span class="sc">.</span>mean()<span class="sc">:.2f}</span><span class="ss">%"</span>)</span>
+<span id="cb6-98"><a href="#cb6-98" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">Highest GDP growth: </span><span class="sc">{</span>ussr_data[<span class="st">'gdp_growth'</span>]<span class="sc">.</span><span class="bu">max</span>()<span class="sc">:.2f}</span><span class="ss">% (Year: </span><span class="sc">{</span>ussr_data<span class="sc">.</span>loc[ussr_data[<span class="st">'gdp_growth'</span>].idxmax(), <span class="st">'year'</span>]<span class="sc">}</span><span class="ss">)"</span>)</span>
+<span id="cb6-99"><a href="#cb6-99" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Lowest GDP growth: </span><span class="sc">{</span>ussr_data[<span class="st">'gdp_growth'</span>]<span class="sc">.</span><span class="bu">min</span>()<span class="sc">:.2f}</span><span class="ss">% (Year: </span><span class="sc">{</span>ussr_data<span class="sc">.</span>loc[ussr_data[<span class="st">'gdp_growth'</span>].idxmin(), <span class="st">'year'</span>]<span class="sc">}</span><span class="ss">)"</span>)</span>
+<span id="cb6-100"><a href="#cb6-100" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-101"><a href="#cb6-101" aria-hidden="true" tabindex="-1"></a><span class="co"># Display the data table</span></span>
+<span id="cb6-102"><a href="#cb6-102" aria-hidden="true" tabindex="-1"></a>display(ussr_data[[<span class="st">'year'</span>, <span class="st">'gdp_growth'</span>, <span class="st">'gdp_per_capita_growth'</span>]].<span class="bu">round</span>(<span class="dv">2</span>))</span>
+<span id="cb6-103"><a href="#cb6-103" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb6-104"><a href="#cb6-104" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-105"><a href="#cb6-105" aria-hidden="true" tabindex="-1"></a><span class="fu">## Key Observations from Year-by-Year Analysis</span></span>
+<span id="cb6-106"><a href="#cb6-106" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-107"><a href="#cb6-107" aria-hidden="true" tabindex="-1"></a>The annual data reveals several important patterns that complement our period analysis:</span>
+<span id="cb6-108"><a href="#cb6-108" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-109"><a href="#cb6-109" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Growth Volatility**</span>
+<span id="cb6-110"><a href="#cb6-110" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Economic growth was highly volatile throughout the Soviet period</span>
+<span id="cb6-111"><a href="#cb6-111" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>The most extreme fluctuations occurred during periods of major historical events (wars, revolutions, reforms)</span>
+<span id="cb6-112"><a href="#cb6-112" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>This volatility is somewhat masked when looking at period averages</span>
+<span id="cb6-113"><a href="#cb6-113" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-114"><a href="#cb6-114" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Growth Peaks and Troughs**</span>
+<span id="cb6-115"><a href="#cb6-115" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>The highest growth rates were typically observed during recovery periods (post-Civil War, post-WWII)</span>
+<span id="cb6-116"><a href="#cb6-116" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>The deepest declines coincided with major conflicts and political transitions</span>
+<span id="cb6-117"><a href="#cb6-117" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>The claimed 13.8% sustained growth rate would have been exceptional even compared to the best individual years</span>
+<span id="cb6-118"><a href="#cb6-118" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-119"><a href="#cb6-119" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**GDP vs GDP per Capita**</span>
+<span id="cb6-120"><a href="#cb6-120" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Total GDP growth often exceeded per capita growth, reflecting population growth</span>
+<span id="cb6-121"><a href="#cb6-121" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>The gap between total and per capita growth varied significantly across different periods</span>
+<span id="cb6-122"><a href="#cb6-122" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>This difference is crucial for understanding actual improvements in living standards</span>
+<span id="cb6-123"><a href="#cb6-123" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-124"><a href="#cb6-124" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Data Patterns**</span>
+<span id="cb6-125"><a href="#cb6-125" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>The year-by-year data shows no sustained period of double-digit growth that would support the 13.8% claim</span>
+<span id="cb6-126"><a href="#cb6-126" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Growth rates were generally more modest and variable than suggested by period averages alone</span>
+<span id="cb6-127"><a href="#cb6-127" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>The data exhibits clear patterns corresponding to known historical events and policy changes</span>
+<span id="cb6-128"><a href="#cb6-128" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-129"><a href="#cb6-129" aria-hidden="true" tabindex="-1"></a>This detailed view reinforces our findings from the period analysis while providing additional context about the variability and patterns of Soviet economic growth.</span>
 </code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
@@ -914,4 +1032,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/kadykov/maddison-ussr-gdp-growth/blob/main/analysis.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/kadykov/maddison-ussr-gdp-growth/edit/main/analysis.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li><li><a href="https://github.com/kadykov/maddison-ussr-gdp-growth/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/kadykov/maddison-ussr-gdp-growth/blob/main/analysis.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/kadykov/maddison-ussr-gdp-growth/edit/main/analysis.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li><li><a href="https://github.com/kadykov/maddison-ussr-gdp-growth/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
