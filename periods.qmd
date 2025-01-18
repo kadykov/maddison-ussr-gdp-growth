@@ -38,7 +38,7 @@ ussr_data['gdppc_growth'] = ussr_data['rgdpnapc'].pct_change(fill_method=None) *
 
 # Define periods
 periods = [
-    (1884, 1913, "Pre-Revolutionary\n(1884-1913)"),
+    (1885, 1913, "Pre-Revolutionary\n(1885-1913)"),
     (1914, 1920, "WWI & Civil War\n(1914-1920)"),
     (1921, 1928, "NEP Period\n(1921-1928)"),
     (1929, 1941, "Early Soviet\n(1929-1941)"),
