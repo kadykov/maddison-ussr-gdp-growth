@@ -1,10 +1,33 @@
 ---
-title: "GDP Growth Analysis"
+title: "Year-by-Year GDP Growth Analysis"
 format:
   html:
     code-fold: true
     code-tools: true
 ---
+
+# Year-by-Year Analysis of USSR's Economic Growth
+
+While our [Period Analysis](periods.qmd) focuses on average growth rates during specific historical periods, particularly addressing the claim of 13.8% growth during 1929-1955, this page provides a more detailed, year-by-year view of the USSR's economic performance.
+
+## Purpose of This Analysis
+
+1. **Detailed Growth Patterns**: By examining annual data points rather than period averages, we can:
+   - Identify specific years of exceptional growth or decline
+   - Observe the volatility of growth rates
+   - See the immediate impact of major historical events
+
+2. **Data Transparency**: The year-by-year presentation allows readers to:
+   - Verify our calculations
+   - Conduct their own analysis of specific time periods
+   - Better understand the underlying data used in our period averages
+
+3. **Growth Rate Variations**: The analysis shows both total GDP and GDP per capita growth rates, helping to:
+   - Distinguish between total economic growth and individual prosperity
+   - Account for population changes in economic performance
+   - Provide a more complete picture of economic development
+
+Below are the visualizations and data showing the annual growth rates throughout the entire period covered by the Maddison Project Database.
 
 ```{python}
 import pandas as pd
@@ -70,3 +93,29 @@ print(f"Lowest GDP growth: {ussr_data['gdp_growth'].min():.2f}% (Year: {ussr_dat
 # Display the data table
 display(ussr_data[['year', 'gdp_growth', 'gdp_per_capita_growth']].round(2))
 ```
+
+## Key Observations from Year-by-Year Analysis
+
+The annual data reveals several important patterns that complement our period analysis:
+
+1. **Growth Volatility**
+   - Economic growth was highly volatile throughout the Soviet period
+   - The most extreme fluctuations occurred during periods of major historical events (wars, revolutions, reforms)
+   - This volatility is somewhat masked when looking at period averages
+
+2. **Growth Peaks and Troughs**
+   - The highest growth rates were typically observed during recovery periods (post-Civil War, post-WWII)
+   - The deepest declines coincided with major conflicts and political transitions
+   - The claimed 13.8% sustained growth rate would have been exceptional even compared to the best individual years
+
+3. **GDP vs GDP per Capita**
+   - Total GDP growth often exceeded per capita growth, reflecting population growth
+   - The gap between total and per capita growth varied significantly across different periods
+   - This difference is crucial for understanding actual improvements in living standards
+
+4. **Data Patterns**
+   - The year-by-year data shows no sustained period of double-digit growth that would support the 13.8% claim
+   - Growth rates were generally more modest and variable than suggested by period averages alone
+   - The data exhibits clear patterns corresponding to known historical events and policy changes
+
+This detailed view reinforces our findings from the period analysis while providing additional context about the variability and patterns of Soviet economic growth.
