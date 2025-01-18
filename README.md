@@ -1,1 +1,0 @@
-# maddison-ussr-gdp-growth
