@@ -43,4 +43,4 @@ We analyze the following key periods:
 - Post-Soviet Crisis (1992-1998)
 - Recovery and Growth (1999-2019)
 
-Navigate to the [Analysis](analysis.qmd) page to see the detailed results.
+For our main findings regarding the claimed 13.8% growth rate during 1929-1955, see the [Period Analysis](periods.qmd) page. For additional analysis of growth patterns, visit the [Analysis](analysis.qmd) page.

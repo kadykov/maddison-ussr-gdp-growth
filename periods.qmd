@@ -6,10 +6,32 @@ format:
     code-tools: true
 ---
 
-# Motivation
+# Fact-Checking Soviet Growth Claims
 
-This is my take to reproduce the figure on the second slide
-from [here](https://crystalbook.ru/wp-content/uploads/2021/05/growth-crystal-ENG.pdf).
+## Motivation
+
+This analysis was prompted by a specific claim made in the book "GROWTH CRYSTAL. FOR THE RUSSIAN ECONOMIC MIRACLE" ([presentation in English](https://crystalbook.ru/wp-content/uploads/2021/05/growth-crystal-ENG.pdf)). On the second slide of their presentation, the authors claim that the USSR achieved an extraordinary GDP growth rate of 13.8% per year during the period 1929-1955, excluding the World War II years (1941-1945).
+
+The authors state that their calculations are based on the Maddison Project Database, which is a highly respected source for historical GDP data. This claim, if true, would suggest that the Soviet Union achieved one of the highest sustained growth rates in economic history.
+
+### Our Approach
+
+To verify this claim, we:
+
+1. Used the same Maddison Project Database (2018 version)
+2. Calculated growth rates for the specific period mentioned (1929-1955, excluding 1941-1945)
+3. Extended the analysis to other periods for context
+4. Analyzed both GDP per capita and total GDP to ensure comprehensive understanding
+
+## Results Summary
+
+Our analysis reveals that:
+
+1. The actual GDP growth rate for 1929-1955 (excluding WWII) was approximately 4.3% per year, not 13.8% as claimed
+2. This growth rate, while significant, is less than one-third of what was claimed in the "GROWTH CRYSTAL" book
+3. The discrepancy raises important questions about the methodology used in the book's calculations
+
+Below are the detailed calculations and visualizations that support these findings.
 
 ## GDP Per Capita
 
@@ -136,7 +158,6 @@ markdown_table = tabulate(stats_df.round(2), headers='keys', tablefmt='pipe', sh
 print(markdown_table)
 ```
 
-
 ## Total GDP
 
 ```{python}
@@ -231,3 +252,23 @@ stats_df.columns = ['Period', 'Average Growth (%)', 'Std Dev (%)', 'Years']
 markdown_table = tabulate(stats_df.round(2), headers='keys', tablefmt='pipe', showindex=False)
 print(markdown_table)
 ```
+
+## Conclusions
+
+Our detailed analysis of the USSR's economic growth rates using the Maddison Project Database reveals several important findings:
+
+1. **Growth Rate Discrepancy**: The claim of 13.8% annual growth during 1929-1955 (excluding WWII) is not supported by the data. Our analysis shows a much more modest rate of 4.3% per year.
+
+2. **Context of Growth**: While 4.3% annual growth is still significant and represents substantial economic development, it's far from the extraordinary claims made in the "GROWTH CRYSTAL" book.
+
+3. **Period Variations**: The analysis shows significant variations in growth rates across different periods:
+   - The pre-revolutionary period showed moderate growth
+   - The early Soviet period (1929-1941) showed higher growth rates due to industrialization
+   - The post-war recovery period also showed significant growth
+   - Later periods showed gradually declining growth rates
+
+4. **Methodological Implications**: The substantial difference between our findings and the book's claims (13.8% vs 4.3%) raises serious questions about the methodology used in the book's calculations.
+
+5. **Historical Perspective**: While Soviet economic growth was significant, especially during industrialization and post-war recovery, the actual rates were more in line with other rapidly developing economies of the 20th century, rather than being unprecedented as sometimes claimed.
+
+This analysis underscores the importance of careful, data-driven examination of historical economic claims and the value of reliable datasets like the Maddison Project Database in conducting such verification.
