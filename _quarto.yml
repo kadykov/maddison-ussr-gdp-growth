@@ -21,6 +21,9 @@ website:
     - source
     - edit
     - issue
+  comments:
+    giscus:
+      repo: kadykov/maddison-ussr-gdp-growth
 
 format:
   html:
